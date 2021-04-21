@@ -7,6 +7,7 @@ import google_pb2
 import grpc
 import argparse
 
+
 class GoogleSearcherService(google_pb2_grpc.GoogleSearcherServicer):
 
     def search(self, request, context):
@@ -19,14 +20,14 @@ class GoogleSearcherService(google_pb2_grpc.GoogleSearcherServicer):
 
 
 # parse arguments from command line
-# returns object, properties: 
+# returns object, properties:
 #   addr - type string, grpc serving address
 def getConfig():
     parser = argparse.ArgumentParser(description='Google Search grpc service')
-    parser.add_argument('--address', dest='addr', 
-        type=str,
-        help='Service listen address. Default value is localhost:42420', default="localhost:42420")
-    
+    parser.add_argument('--address', dest='addr',
+                        type=str,
+                        help='Service listen address. Default value is localhost:42420', default="localhost:42420")
+
     return parser.parse_args()
 
 
