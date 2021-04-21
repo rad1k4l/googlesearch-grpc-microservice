@@ -112,3 +112,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+google_pb2_grpc.py
+google_pb2.py

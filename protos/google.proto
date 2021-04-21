@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package searcher;
+
+service GoogleSearcher {
+  rpc search(GoogleSearchRequest) returns(GoogleSearchResponse){}
+}
+
+message GoogleSearchRequest {
+  string query = 1;
+  optional int32 stop = 2;
+}
+
+message GoogleSearchResponse {
+  repeated string results = 1;
+}
+
