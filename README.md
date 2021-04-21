@@ -1,6 +1,6 @@
 # Googlesearch API gRPC Microservice
 
-Googlesearch API is gRPC microservice version of [MarioVilas/googlesearch](https://github.com/MarioVilas/googlesearch) repository.
+Googlesearch API is gRPC microservice version of [MarioVilas/googlesearch](https://github.com/MarioVilas/googlesearch) library.
 
 ## Installation
 
