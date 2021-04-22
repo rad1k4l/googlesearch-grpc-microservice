@@ -10,7 +10,7 @@ Clone repository.
 git clone https://github.com/rad1k4l/googlesearch-grpc-microservice.git
 ```
 
-Install requirements
+Install requirements.txt
 
 ```bash
 pip3 install -r requirements.txt
